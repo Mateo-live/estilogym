@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilo Gym</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <section id="main">
+
+        <div class="container">
+
+            <nav>
+                <img src="imagenes/logo.png" alt="" class="logo">
+                <ul class="nav-list">
+                    <li><a href="#main">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><button class="btn btn-secondary"><a href="https://api.whatsapp.com/send?phone=3857460562">3857460562</a></button></li>
+                </ul>
+                <img src="./imagenes/menu.png" alt="Botón de Menú" class="menu-btn">
+            </nav>
+
+            <div class="main-content">
+                <h1 class="intro-heading">AMAMOS ESTAR EN</h1>
+                <h1 class="main-heading">MOVIMIENTO</h1>
+                <button class="btn btn-primary"><a href="https://api.whatsapp.com/send?phone=3857460562">Comenzá ya</a></button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="servicios">
+
+        <div class="container">
+            <div class="section-title">
+                <h1>ACTIVIDADES</h1>
+
+                <div class="line"></div>
+
+                <div class="servicios">
+
+                    <div class="servicio">
+                        <img src="imagenes/gym.jpg" alt="">
+                        <h3>Gimnasio</h3>
+                        <p>Sala de Musculación que cuenta con mas de 40 máquinas para tus entrenamientos</p>
+                    </div>
+
+                    <div class="servicio">
+                        <img src="imagenes/clases.jpg" alt="">
+                        <h3>Clases</h3>
+                        <p>Variedad de actividades para realizar en grupo: <br><br>
+                            <strong>Pilates Mat | Yoga | Funcional | Juventud Acumulada | HIIT | Aeróbica-Localizada |<br> Step-Localizada</strong>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="cta-app">
+
+        <div class="container">
+            <h1>Entrá a la app</h1>
+            <p>Para conseguir un seguimiento de alto rendimiento y poder reservar tus clases</p>
+            <button class="btn-app"><a href="#">Visitar</a></button>
+        </div>
+
+    </section>
+
+
+    <section id="nosotros">
+       
+        <h1>NUESTRA HISTORIA</h1>
+        <div class="line"></div>
+
+    <div class="container">
+
+        <div class="about-content">
+            <h2>Te contamos como arrancó la idea de armar un Gimnasio para brindarle salud a las personas</h2>
+            <p>
+                Estilo Gym se fundó el 3 de enero de 2000 con el objetivo de mejorar la condición física y promover la salud. A lo largo de 25 años, ha evolucionado desde un salón de 40 m² a un total de 740 m², que incluye cuatro salones y diversas áreas de ejercicio, como musculación, pilates reformer, funcional y clases grupales (aeróbica, step, zumba, pilates mat, yoga). La mayor parte de sus socios acuden por motivos de salud y la dirección se enfoca en la renovación constante para que los miembros se sientan cómodos y orgullosos de ser parte de la comunidad Estilo.</p>
+        </div>
+
+        <div class="about-img">
+            <img src="imagenes/story.jpg" alt="">
+        </div>
+
+    </div>
+
+    </section>
+
+    <section id="cta">
+
+        <div class="container">
+            <h1>¡TE ESPERAMOS!</h1>
+            <p>Para mantenerte activo, en cada entrenamiento y cuidar lo más importante de tu vida, LA SALUD</p>
+            <button class="btn btn-primary"><a href="https://api.whatsapp.com/send?phone=3857460562">Quiero ser parte</a></button>
+        </div>
+
+    </section>
+
+
+    <section class="footer" id="contact">   
+        
+        <a href="https://api.whatsapp.com/send?phone=3857460562" class="btn-wsp" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+        
+        <div class="icons">
+            <a href="https://www.instagram.com/estilo_gym1/" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="https://www.facebook.com/estilogym1" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+        </div>
+        <p>Todos los derechos reservados. &copy; 2025 Brodes.</p>
+
+    </section>
+
+    <script>
+        const navBtn = document.querySelector('.menu-btn')
+        const navList = document.querySelector('.nav-list')
+
+        navBtn.addEventListener("click", function () {
+            navList.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>

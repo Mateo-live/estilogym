@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primary: #141414;
+    --secondary: #dea903;
+    --white: #efefef;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #efefef;
+    font-family: "Poppins", sans-serif;
+    color: var(--primary);
+}
+
+.btn-wsp {
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    bottom: 50px;
+    right: 50px;
+    background: #07bb40;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 40px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.3);
+    z-index: 100;
+}
+
+#main {
+    background-image: linear-gradient(#141414,rgba(0,0,0,0.4)), url("imagenes/entrada.jpg");
+    min-height: 100vh;
+    background-position: bottom center;
+    background-size: cover;
+    margin: 0px auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 16px;
+    margin: auto;
+}
+
+section {
+    margin: 80px auto;
+}
+
+.container a {
+    text-decoration: none;
+    color: #efefef;
+}
+
+.logo {
+    width: 80px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 28px;
+    color: white;
+    align-items: center;
+}
+
+.nav-list a {
+    color: white;
+}
+
+.btn {
+    padding: 12px 20px;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-secondary {
+    border: 2px solid var(--white);
+    color: var(--white);
+    font-weight: bold;
+}
+
+.btn-primary {
+    border: none;
+    background: var(--secondary);
+    color: var(--primary);
+}
+
+.btn-primary a {
+    text-decoration: none;
+    color: #efefef;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 300px;
+    color: var(--white);
+}
+
+.main-content .intro-heading {
+    font-size: 40px;
+}
+
+.main-content .main-heading {
+    font-size: 90px;
+    margin-top: -20px;
+}
+
+.main-content p {
+    max-width: 250px;
+    margin-bottom: 10px;
+}
+
+.menu-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: none;
+    width: 30px;
+}
+
+.section-title h1 {
+    font-size: 50px;
+    text-align: center;
+    color: #3f3f3f;
+}
+
+.line {
+    width: 150px;
+    height: 4px;
+    border: 10px;
+    background: var(--secondary);
+    margin: 20px auto;
+}
+
+.servicios {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.servicios p {
+    color: #3f3f3f;
+}
+
+.servicios h3 {
+    color: #2e2e2e;
+}
+
+.servicio {
+    width: 400px;
+}
+
+.servicio strong {
+    font-style: italic;
+}
+
+.servicio img {
+    max-width: 100%;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.servicio img:hover {
+    transform: scale(1.05);
+}
+
+#nosotros h1 {
+    font-size: 50px;
+    text-align: center;
+    color: #3f3f3f;
+}
+
+
+
+#cta {
+    min-height: 500px;
+    background-image: linear-gradient(#dea631,rgba(0,0,0,0.2)), url(imagenes/entrada.jpg);
+    background-position: center;
+    background-size: cover;
+    color: var(--white);
+}
+
+
+#cta .container {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    text-align: center;
+}
+
+#cta h1 {
+    font-size: 50px;
+}
+
+#cta .container p {
+    font-size: 18px;
+}
+
+#nosotros .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 120px;
+}
+
+#nosotros .container .about-content {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: start;
+}
+
+#nosotros .container .about-content h1 {
+    font-size: 30px;
+}
+
+.about-content h2 {
+    color: #2e2e2e;
+}
+
+.about-content p {
+    color: #3f3f3f;
+}
+
+.about-img img {
+    max-width: 500px;
+}
+
+#cta-app {
+    min-height: 500px;
+    background-image: linear-gradient(rgba(0,0,0,0.2), #dea731c2), url(imagenes/celular.jpg);
+    background-position: center;
+    background-size: cover;
+    color: var(--white);
+}
+
+
+#cta-app .container {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    text-align: center;
+}
+
+#cta-app h1 {
+    font-size: 50px;
+}
+
+#cta-app .container p {
+    font-size: 18px;
+}
+
+.btn-app {
+    padding: 12px 20px;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-app {
+    border: none;
+    background: var(--secondary);
+    color: var(--primary);
+}
+
+.icons .bx {
+    font-size: 50px;
+    color: #dea903;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer p {
+    font-size: 18px;
+    color: #3f3f3f;
+}
+
+@media screen and (max-width: 770px) {
+    .btn-wsp {
+        bottom: 25px;
+        right: 25px;
+    }
+    .main-content .main-heading {
+        font-size: 70px;
+    }
+    .main-content .intro-heading {
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+    .menu-btn {
+        display: block;
+    }
+    .nav-list {
+        flex-direction: column;
+        background: #dea903;
+        position: absolute;
+        top: 0;
+        right: -900px;
+        width: 80%;
+        height: 100vh;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .nav-list.active {
+        right: 0;
+    }
+    .nav-list li:not(:last-child) {
+        text-align: left;
+        width: 100%;
+        padding: 10px 30px;
+        border-bottom: 1px solid var(--white);
+    }
+
+    #nosotros .container {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
