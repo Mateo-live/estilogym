@@ -39,7 +39,7 @@ body {
 }
 
 #main {
-    background-image: linear-gradient(#141414,rgba(0,0,0,0.4)), url("imagenes/entrada.jpg");
+    background-image: linear-gradient(180deg, #141414,rgba(0,0,0,0.2)), url("imagenes/entrada.jpg");
     min-height: 100vh;
     background-position: bottom center;
     background-size: cover;
@@ -73,6 +73,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 30px;
 }
 
 .nav-list {
@@ -155,6 +156,40 @@ nav {
     border: 10px;
     background: var(--secondary);
     margin: 20px auto;
+}
+
+#mvv {
+    min-height: 350px;
+    background-color: #141414;
+    background-position: center;
+    background-size: cover;
+    color: var(--white);
+}
+
+
+#mvv .container {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    text-align: center;
+}
+
+#mvv h1 {
+    font-size: 50px;
+    color: #dea903;
+}
+
+#mvv .container p {
+    font-size: 20px;
+}
+
+#mvv .container img {
+    width: 70px;
+    margin-top: 10px;
 }
 
 .servicios {
@@ -301,11 +336,16 @@ nav {
 }
 
 .icons .bx {
-    font-size: 50px;
+    font-size: 40px;
     color: #dea903;
     margin: 0 13px;
     cursor: pointer;
     padding: 18px 0;
+}
+
+.footer i:hover {
+    scale: 120%;
+    transition: 0.5s;
 }
 
 .footer {
@@ -317,6 +357,31 @@ nav {
 .footer p {
     font-size: 18px;
     color: #3f3f3f;
+}
+
+.scrollup {
+    position: fixed;
+    right: 4.2rem;
+    bottom: -50%;
+    background-color: #dea903;
+    padding: 6px;
+    display: inline-block;
+    color: var(--title-color);
+    font-size: 1.5rem;
+    z-index: var(--z-tooltip);
+    transition: bottom .4s, transform .4s;
+}
+
+.scrollup i {
+    color: #efefef;
+}
+
+.scrollup:hover {
+    transform: translateY(-.25rem);
+}
+
+.show-scroll {
+    bottom: 9rem;
 }
 
 @media screen and (max-width: 770px) {
@@ -333,6 +398,10 @@ nav {
     }
     .menu-btn {
         display: block;
+        position: fixed;
+        background:#dea903;
+        border-radius: 2px;
+        margin-top: 30px;
     }
     .nav-list {
         flex-direction: column;
@@ -344,6 +413,7 @@ nav {
         height: 100vh;
         padding-top: 80px;
         transition: all 0.3s ease;
+        position: fixed;
     }
     .nav-list.active {
         right: 0;
@@ -354,9 +424,12 @@ nav {
         padding: 10px 30px;
         border-bottom: 1px solid var(--white);
     }
-
     #nosotros .container {
         flex-direction: column;
         gap: 30px;
+    }
+    .scrollup {
+        z-index: -5;
+        opacity: 0;
     }
 }

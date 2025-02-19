@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="normalize.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"rel="stylesheet"/>
 </head>
 
 <body>
@@ -24,7 +25,7 @@
                     <li><a href="#nosotros">Nosotros</a></li>
                     <li><button class="btn btn-secondary"><a href="https://api.whatsapp.com/send?phone=3857460562">3857460562</a></button></li>
                 </ul>
-                <img src="./imagenes/menu.png" alt="Botón de Menú" class="menu-btn">
+                <img src="imagenes/menu.png" alt="Botón de Menú" class="menu-btn">
             </nav>
 
             <div class="main-content">
@@ -33,6 +34,16 @@
                 <button class="btn btn-primary"><a href="https://api.whatsapp.com/send?phone=3857460562">Comenzá ya</a></button>
             </div>
 
+        </div>
+
+    </section>
+
+    <section id="mvv">
+
+        <div class="container">
+            <h1>ESTILO GYM</h1>
+            <p>El propósito del Gimnasio Estilo es estar en movimiento, promover la vida saludable y contagiar la motivación a aquellos que nos eligen para que logren cumplir sus objetivos</p>
+            <img src="imagenes/logo.png" alt="">
         </div>
 
     </section>
@@ -54,11 +65,47 @@
                     </div>
 
                     <div class="servicio">
-                        <img src="imagenes/clases.jpg" alt="">
-                        <h3>Clases</h3>
+                        <img src="imagenes/pilates.jpg" alt="">
+                        <h3>Pilates Mat</h3>
                         <p>Variedad de actividades para realizar en grupo: <br><br>
-                            <strong>Pilates Mat | Yoga | Funcional | Juventud Acumulada | HIIT | Aeróbica-Localizada |<br> Step-Localizada</strong>
+                            <strong>Pilates Mat | Yoga | Funcional | Juventud Acumulada | Zumba | Aeróbica-Localizada |<br> Step-Localizada</strong>
                         </p>
+                    </div>
+
+                    <div class="servicio">
+                        <img src="imagenes/yoga.jpg" alt="">
+                        <h3>Yoga</h3>
+                        <p></p>
+                    </div>
+
+                    <div class="servicio">
+                        <img src="imagenes/funcional.jpg" alt="">
+                        <h3>Funcional</h3>
+                        <p></p>
+                    </div>
+
+                    <div class="servicio">
+                        <img src="imagenes/juven-acum.jpg" alt="">
+                        <h3>Juventud Acumulada</h3>
+                        <p></p>
+                    </div>
+
+                    <div class="servicio">
+                        <img src="imagenes/zumba.jpg" alt="">
+                        <h3>Zumba</h3>
+                        <p></p>
+                    </div>
+
+                    <div class="servicio">
+                        <img src="imagenes/gym.jpg" alt="">
+                        <h3>Aeróbica-Localizada</h3>
+                        <p></p>
+                    </div>
+
+                    <div class="servicio">
+                        <img src="imagenes/gym.jpg" alt="">
+                        <h3>Step-Localizada</h3>
+                        <p></p>
                     </div>
 
                 </div>
@@ -72,7 +119,7 @@
 
         <div class="container">
             <h1>Entrá a la app</h1>
-            <p>Para conseguir un seguimiento de alto rendimiento y poder reservar tus clases</p>
+            <p>Para poder acceder a un seguimiento de alto rendimiento y poder reservar tus clases</p>
             <button class="btn-app"><a href="#">Visitar</a></button>
         </div>
 
@@ -104,14 +151,14 @@
 
         <div class="container">
             <h1>¡TE ESPERAMOS!</h1>
-            <p>Para mantenerte activo, en cada entrenamiento y cuidar lo más importante de tu vida, LA SALUD</p>
+            <p>Para mantenerte activo y enfocado en cada entrenamiento, para cuidar lo más <br>importante de tu vida, LA SALUD</p>
             <button class="btn btn-primary"><a href="https://api.whatsapp.com/send?phone=3857460562">Quiero ser parte</a></button>
         </div>
 
     </section>
 
 
-    <section class="footer" id="contact">   
+    <footer class="footer" id="contact">   
         
         <a href="https://api.whatsapp.com/send?phone=3857460562" class="btn-wsp" target="_blank"><i class='bx bxl-whatsapp'></i></a>
         
@@ -121,7 +168,11 @@
         </div>
         <p>Todos los derechos reservados. &copy; 2025 Brodes.</p>
 
-    </section>
+    </footer>
+
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
 
     <script>
         const navBtn = document.querySelector('.menu-btn')
@@ -129,8 +180,16 @@
 
         navBtn.addEventListener("click", function () {
             navList.classList.toggle('active');
-        });
+        })
+        const scrollUp = () =>{
+	    const scrollUp = document.getElementById('scroll-up')
+   
+	    this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
+						: scrollUp.classList.remove('show-scroll')
+        }
+        window.addEventListener('scroll', scrollUp);
     </script>
+
 
 </body>
 </html>
